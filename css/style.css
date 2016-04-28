@@ -27,12 +27,12 @@ h1,h2,h3,h4,h5{
 }
 .section-content .header-option-menu{
 	box-shadow: 0px 5px 5px #ccc;
-	line-height: 15px;
-	background-color: #1A237E;
+	/*line-height: 15px;*/
+	background-color: #182B9B;
 	color: white;
 }
 .section-content .header-option-menu .content-icon{
-	width: 50px;
+	width: 32px;
 	float: left;
 }
 .section-content .header-option-menu .title{
@@ -91,10 +91,10 @@ h1,h2,h3,h4,h5{
 .section-content .container-controls .containt-change-suc{
 	margin-top: 1em;
 }
-.flaticon-security:before,
-.flaticon-people:before,
-.flaticon-people-1:before{
-	margin-left: 10px;
+
+
+.content-icon .fa-user:before,.content-icon .fa-credit-card,.content-icon .fa-calendar {
+	margin-left: 18px;
 }
 .flaticon-arrows:before{
 	margin: 0;
@@ -242,7 +242,7 @@ article figcaption  h5{
  .item-evento .body .numinsc{
  	float: right;
  }
- .content-solicitud-codigo,.content-inscripcion{
+ .content-solicitud-inscripcion{
  	display: none;
  }
 .container-evento .content-card header{
@@ -411,7 +411,21 @@ article figcaption  h5{
 .margin-right-2{
 	margin-right: 2em;
 }
-
+.margin-p5{
+	margin: .5em;
+}
+.margin-top-p5{
+	margin-top: .5em;
+}
+.margin-bottom-p5{
+	margin-bottom: .5em;
+}
+.margin-left-p5{
+	margin-left: .5em;
+}
+.margin-right-p5{
+	margin-right: .5em;
+}
 .border-left-amber{
  	border-left: 2px solid rgb(255,215,64);
  }
@@ -446,3 +460,9 @@ article figcaption  h5{
 	font-weight: bold;
 	margin-top: 10px;
 }
+
+.label {
+    padding: .7em .9em .7em;
+    font-size: 85%;
+}
+   
