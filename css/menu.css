@@ -1,0 +1,152 @@
+#header-movil{
+  background-color: #1A237E;
+  color: white;
+}/* End */
+
+/* Menú móvil */
+/* Begin */
+.content-menu-movil{
+  position: fixed;
+  width: 240px;
+  margin: 0px;
+  padding: 0px;
+  z-index: 1000;
+  background-color: transparent;
+  overflow: scroll;
+  top: 0px;
+  left: -320px;
+  transition: left .5s .0s;
+}
+
+.content-menu-movil.active{
+  left: 0px;
+  display: -webkit-flex;
+    
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+
+    width: 240px;
+    height: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    box-sizing: border-box;
+    border-right: 1px solid #e0e0e0;
+    background: #fafafa;
+    /*
+    -webkit-transform: translateX(-250px);
+    transform: translateX(-250px);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+    */
+    color: #424242;
+    overflow-y: auto;
+    overflow-x : hidden;
+    z-index: 5;
+}
+#header-movil .content-menu-movil .content-level{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  left: -320px;
+  padding: 0px;
+  /*background-color: #ADB5BA;*/
+  background-color: #EEE;
+  transition: left .5s 0s;
+  position: absolute;
+}
+#header-movil .content-menu-movil .content-level ul{
+  margin: 0px;
+  padding: 0px;
+}
+#header-movil .content-menu-movil .content-level.animate{
+  left: 0px !important;
+}
+#header-movil .content-menu-movil ul li{
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+  display: none;
+}
+#header-movil .content-menu-movil ul li.active{
+  display: block;
+}
+#header-movil .content-menu-movil ul .other a{
+  /*background-color: #60717A;*/
+  background-color: #B1B1B1;
+}
+#header-movil .content-menu-movil ul .back a{
+  background-color: #CCC;
+  border-bottom-color: black;
+}
+#header-movil .content-menu-movil ul li a{
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  padding: 0.8em;
+  color: #54535B;
+  text-decoration: none;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+}
+#header-movil .content-menu-movil ul li a i{
+  width: 30px;
+  height: 20px;
+  font-size: 1.1em !important;
+  padding-right: 10px;
+} /* End */
+#header-movil .navbar-header{
+  z-index: 1000;
+  width: 100%;
+  background-color: #1A237E;
+}
+#header-movil .navbar-header h4 {
+  float: left;
+}
+#header-movil button.navbar-toggle .icon-bar {
+  background-color: #fff;
+}/* End */
+
+/* Animación del icono de menu hamburguesa */
+/* Begin */
+#header-movil button.navbar-toggle .icon-x1 , #header-movil button.navbar-toggle .icon-x2{
+            transition: transform .5s .25s;
+}
+#header-movil button.navbar-toggle .icon-hide{
+  transition: background 0s .25s; 
+}
+#header-movil button.navbar-toggle .icon-x1.animate{
+  transform: translateY(5.8px) rotate(45deg) !important;
+}
+#header-movil button.navbar-toggle .icon-x2.animate{
+  transform: translateY(-5.8px) rotate(-45deg) !important;
+}
+#header-movil button.navbar-toggle .icon-hide.animate{
+  background: none !important;
+}/* End */
+
+h4{
+  font-size: 20px;
+}
+
+#menu6.other i{
+  padding-left: 35px;
+}
+
+#menu6.other a{
+  text-align: center;
+}
+
+
+.fa-chevron-right:before {
+    padding-left: 130px;}

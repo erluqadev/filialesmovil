@@ -1,0 +1,43 @@
+.select{
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
+	background-color: white;
+	padding: 0;
+	margin: 0;
+	overflow: scroll;
+	max-height: 200px;
+	display: none;
+	border-left: 2px solid rgb(255,215,64);
+	box-shadow: 3px 5px 5px #ccc;
+}
+.select .item{
+	padding: .5em;
+	border-bottom: 1px solid #ccc;
+}
+.select .item:hover{
+	background-color: #cccccc;
+}
+.select-icon{
+	float: right;
+}
+.select .content-search{
+	padding: .5em;
+}
+.select .content-search .content-input-search{
+	border: 1px solid #ccc;
+	padding: .2em;
+}
+.select .content-search .input-search{
+	width: 80%;
+	border: none;
+}
+.select .content-search .icon-search-select{
+	width: 10%;
+}
+.select .content-search .icon-search-select:before{
+	font-size: 15px;
+}
+.select .content-search .input-search:focus{
+	outline: none;
+}

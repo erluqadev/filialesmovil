@@ -1,0 +1,131 @@
+<header class="header-option-menu col-xs-12 col-sm-12 no-padding with-padding-top-p2 with-padding-bottom-p2">
+  <div class="content-icon no-padding with-padding-top-p3"><i class="flaticon-social-1"></i></div>
+  <div class="title with-padding-top-p2 with-padding-bottom-p2 with-padding-left-p5 with-padding-rigth-p5">
+    Solicitar Códigos para Inscripción a Evento
+  </div>
+</header>
+<div id="content-seccion-evento" class="no-padding">
+  <div class="col-xs-12 col-sm-12 no-padding border-bottom-indigo">
+    <div class="with-padding-p5"><strong>SELECCIONE EVENTO</strong></div>
+  </div>
+  <div class="container-controls col-xs-12 col-sm-12 with-padding">
+    <div class="col-xs-12 col-sm-12 no-padding">
+      <div class="mdl-textfield mdl-js-textfield">
+        <input id="input-select-mes" data-select="" class="mdl-textfield__input input-select" type="text" readonly="readonly" />
+        <label class="mdl-textfield__label" for="input-select-mes">Seleccione Mes</label>
+        <i class="icon-select flaticon-arrows-1"></i>
+      </div>
+    </div>
+  </div>
+  <div id="template-evento" class="hidden">
+    <div class="item-evento col-xs-12 col-sm-12 no-padding with-padding-top-p2 with-padding-bottom-p2">
+      <header class="col-xs-12 col-sm-12 header">
+        
+      </header>
+      <div class="col-xs-12 col-sm-12 body">
+        <span class="lugar-fecini"></span>
+        <span class="label label-warning numinsc"></span>
+      </div>
+    </div>
+  </div>
+  <div id="container-eventos" class="col-xs-12 col-sm-12 container-eventos with-padding-left with-padding-right">
+    
+  </div>
+</div>
+<div id="content-solicitud-codigo" class="content-solicitud-codigo">
+  <div class="col-xs-12 col-sm-12 no-padding border-bottom-indigo">
+    <div class="with-padding-p5"><strong>SOLICITAR CÓDIGOS</strong></div>
+  </div>
+  <div class="col-xs-12 col-sm-12 with-padding content-data-evento">
+    <header class="col-xs-12 col-md-12 with-padding-p3">
+      <div id="evento-name" class="evento-name">
+        
+      </div>
+      <div class="evento-data">
+        <span class="span-lugarfecha" id="span-lugarfecha"></span>
+        <span class="span-numinsc label label-warning" id="span-numinsc"></span>
+      </div>
+    </header>
+  </div>
+  <div class="container-evento">
+    <div class="content-card col-xs-6">
+      <div class="card-numcodigos col-xs-12 no-padding border-fine-gris">
+        <header class="border-top-green border-bottom-fine-gris">
+          <p class="no-margin with-padding-p2">Separados</p>
+        </header>
+        <div class="body with-padding-p5">
+          <p id="cant-separados" class="no-margin"></p>
+        </div>
+      </div>
+    </div>
+    <div class="content-card col-xs-6">
+      <div class="card-numcodigos col-xs-12 no-padding border-fine-gris">
+        <header class="border-top-amber border-bottom-fine-gris">
+          <p class="no-margin with-padding-p2">Disponibles</p>
+        </header>
+        <div class="body with-padding-p5">
+          <p id="cant-disponibles" class="no-margin"></p>
+        </div>
+      </div>
+    </div>
+    <div class="container-codigos col-xs-12 col-sm-12 with-padding">
+      <p class="no-margin">Códigos Separados</p>
+      <div id="content-codigos" class="col-xs-12 col-sm-12 no-padding">
+        
+      </div>
+    </div>
+    <div class="container-form col-xs-12 col-sm-12 with-padding">
+      <form id="form-solicitar-codigos" action="" class="col-xs-12 col-sm-12">
+        <div class="input-group">
+          <div class="content-icon">
+            <i class="flaticon-people-1"></i>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="number" id="txtCanCod" pattern="-?[0-9]*(\.[0-9]+)?">
+            <label class="mdl-textfield__label" for="txtCanCod">Cant. Códigos</label>
+            <span class="mdl-textfield__error">Ingrese un número válido</span>
+          </div>
+        </div>
+        <div class="form-buttons">
+          <div class="content-button">
+            <button type="button" id="btn-send" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+              Solicitar
+            </button>
+          </div>
+          <div class="content-button">
+            <button type="reset" id="btn-clear" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+              Borrar
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="content-inscripcion" id="content-inscripcion">
+  <div class="col-xs-12 col-sm-12 no-padding border-bottom-indigo">
+    <div class="with-padding-p5"><strong>INSCRIBIR A EVENTO</strong></div>
+  </div>
+  <div class="col-xs-12 col-sm-12 with-padding content-data-evento">
+    <header class="col-xs-12 col-md-12 with-padding-p3">
+      <div id="insc-evento-name" class="evento-name"></div>
+      <div class="evento-data">
+        <span class="span-lugarfecha" id="insc-span-lugarfecha"></span>
+        <span class="span-numinsc label label-warning" id="insc-span-numinsc"></span>
+      </div>
+    </header>
+  </div>
+</div>
+<dialog class="mdl-dialog">
+  <div class="mdl-dialog__content">
+    <button id="btn-dialog-solicitar" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored button-dialog">
+      Solicitar
+    </button>
+    <button id="btn-dialog-inscribir" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored button-dialog">
+      Inscribir
+    </button>
+    <button class="mdl-button mdl-js-button mdl-button--raised close button-dialog">
+      Cerrar
+    </button>
+  </div>
+</dialog>

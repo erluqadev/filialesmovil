@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>App Web</title>
+    <script src="js/validSession.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/flaticon/flaticon.css">
+    <link rel="stylesheet" href="plugins/toastr/toastr.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-amber.min.css" />
+    <link href="plugins/fontawesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen">
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/select.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+  </head>
+
+<body>
+<header id="header-movil">
+  <nav id="nav-movil">
+    <div class="navbar-header">
+      <h4 class="with-padding-p5">SUCURSALES</h4>
+      <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar icon-x1"></span>
+        <span class="icon-bar icon-hide"></span>
+        <span class="icon-bar icon-x2"></span>
+      </button>
+    </div>
+    <div class="col-md-12 content-menu-movil">
+
+    <div class="cabecera">
+      <figure>
+        <img src="img/logo-blanco-02.png">
+      </figure>
+    </div>
+
+    <article class="profile">
+      <figure>
+        <div class="avatar">
+          <img src="img/social.png">
+        </div>
+      </figure>
+      <figcaption>
+        <h4 class="user-username"></h4>
+        <h5 class="user-sucursal"></h5>
+      </figcaption>
+    </article>
+
+    <div class="content-level">
+      <ul id="level-1">
+        <li id="menu1" class="item"><a data-click="item-selected" href="javascript:initVerificarSocio()" title="Verificar-socio"><i class="fa fa-users" aria-hidden="true"></i>&nbsp;Verificar Socio</a></li>
+
+        <li id="menu2" class="item"><a data-click="item-selected" href="javascript:initEventos2()" title="Eventos"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;Eventos</a>
+
+        <li id="menu3" class="item childs"><a href="#" title="Cajas"><i class="fa fa-archive" aria-hidden="true"></i>&nbsp;Cajas<i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+
+        <li id="menu4" class="item"><a href="#" title="Depositos"><i class="fa fa-money" aria-hidden="true"></i>&nbsp;Depósitos</a>
+
+        <li id="menu5" class="item"><a href="#" title="item-4"><i class="fa fa-truck" aria-hidden="true"></i>&nbsp;Almacén</a></li>
+
+        <li id="menu6" class="item other"><a href="#" title="item-11">Cerrar sesión<i class="fa fa-power-off" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+
+    <div class="content-level">
+      <ul id="level-2">
+        <li data-level="1" data-parent='menu3' class="back"><a><i class="fa fa-chevron-left" aria-hidden="true"></i>&nbsp; &nbsp;Cajas</a></li>
+
+        <li id="cajas1" data-parent='menu3' class="item"><a href="http://tienda.construccion.org/productos/software/licencia_csi" title="Cajas-Lima"><i class="fa fa-archive" aria-hidden="true"></i>&nbsp;Enviadas a Lima</a></li>
+
+        <li id="cajas2" data-parent='menu3' class="item"><a href="http://tienda.construccion.org/productos/editorial/cd" title="Cajas-sucursal"><i class="fa fa-archive" aria-hidden="true"></i>&nbsp;Recibidas en Sucursal</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<!---nav-->
+
+<section id="section-content" class="col-xs-12 col-sm-12 section-content no-padding">
+  <div class="content-welcome col-xs-12 col-sm-12">
+    <img src="img/logo-negro-100x35.png">
+    <h3><strong>Bienvenido!</strong></h3>
+    <h3><span class="user-username"></span></h3>
+    <div class="place user-sucursal">Sucursal</div>
+  </div>
+
+<div class="col-xs-12 col-sm-12 with-padding">
+    <div class="col-xs-6 col-sm-6 with-padding-p2">
+      <div class="access-box with-padding">Verificar Socio</div>
+    </div>
+    <div class="col-xs-6 col-sm-6 with-padding-p2">
+      <div class="access-box with-padding">Eventos</div>
+    </div>
+    <div class="col-xs-6 col-sm-6 with-padding-p2">
+      <div class="access-box with-padding">Cajas</div>
+    </div>
+    <div class="col-xs-6 col-sm-6 with-padding-p2">
+      <div class="access-box with-padding">Almacén</div>
+    </div>
+</div>
+
+
+
+</section>
+<footer class="footer-content col-xs-12 col-md-12 margin-top-1">  
+  <img src="img/logo-footer.png">
+  <div class="text-foo">
+    <p>Instituto de la Construcción y Gerencia</p><p>© DERECHOS RESERVADOS - 2016</p>
+  </div>
+</footer>
+		<script src="plugins/jquery/jquery-2.2.2.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <script src="plugins/toastr/toastr.min.js"></script>
+    <script src="js/commons.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/verificarSocio.js"></script>
+    <script src="js/eventos_2.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

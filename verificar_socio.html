@@ -1,0 +1,43 @@
+<header class="header-option-menu col-xs-12 col-sm-12 no-padding with-padding-top-p2 with-padding-bottom-p2">
+	<div class="content-icon no-padding with-padding-top-p3">
+		<i class="flaticon-social-1"></i>
+	</div>
+	<div class="title with-padding-top-p2 with-padding-bottom-p2 with-padding-left-p5 with-padding-rigth-p5">
+		Verificar Socio
+	</div>
+</header>
+<div class="container-form col-xs-12 col-sm-12 with-padding margin-top-2">
+	<form id="form-verif-socio" action="" class="col-xs-12 col-sm-12">
+		<div class="input-group">
+			<div class="content-icon">
+				<i class="flaticon-people-1"></i>
+			</div>
+			<div class="mdl-textfield mdl-js-textfield">
+				<input class="mdl-textfield__input" type="number" id="txtNroDoc" pattern="-?[0-9]*(\.[0-9]+)?">
+				<label class="mdl-textfield__label" for="txtDni">N° Documento</label>
+				<span class="mdl-textfield__error">Ingrese un N° de Documento Válido</span>
+			</div>
+		</div>
+		<div class="form-buttons">
+			<div class="content-button">
+				<button type="button" id="btn-verificar" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+				  Verificar
+				</button>
+			</div>
+			<div class="content-button">
+				<button type="reset" id="btn-clear" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+				  Borrar
+				</button>
+			</div>
+		</div>
+	</form>
+</div>
+<div class="container-msg col-xs-12 col-sm-12 with-padding-top with-padding-bottom with-padding-left-2 with-padding-rigth-2">
+	<div id="msg-data" class="col-xs-12 col-sm-12 no-padding with-padding-left-p5 border-left-amber hidden">
+		<div class="col-xs-4 col-sm-4 no-padding with-padding-top-p5 with-padding-bottom-p5"><strong>Nombres</strong></div>
+		<div id="msg-name" class="col-xs-8 col-sm-8 col-xs-offset-2 col-sm-offset-2 no-padding"></div>
+		<div class="col-xs-4 col-sm-4 no-padding with-padding-top-p5 with-padding-bottom-p5"><strong>Estado</strong></div>
+		<div id="msg-status" class="col-xs-8 col-sm-8 col-xs-offset-2 col-sm-offset-2 no-padding"></div>
+	</div>
+	<div id="msg-nodata" class="border-left-danger hidden">La persona no figura en el sistema ICG.</div>
+</div>
